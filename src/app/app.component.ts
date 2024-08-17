@@ -1,13 +1,16 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { NavbarComponent } from "./content/navbar/navbar.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [NavbarComponent, RouterOutlet, CommonModule],
+  
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'meu-portfolio';
 }

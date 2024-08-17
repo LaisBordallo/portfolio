@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+body {
+    background-color: #fff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #1e1e1e;
+  }
+  
+  .p-r {
+    position: relative;
+  }
+  
+  .bg-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+  }
+  

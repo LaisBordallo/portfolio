@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-top" role="navigation" aria-label="Main navigation">
+    <div class="logo" aria-label="Logo"></div>
+    <a class="navbar-brand js-scroll" href="#page-top" aria-label="Home">Portifolio Laís</a>
+    <button class="navbar-toggler" type="button" (click)="toggleNavbar()" [attr.aria-expanded]="['isNavbarCollapsed'] ? 'false' : 'true'" aria-controls="navbarNav" aria-label="Toggle navigation"></button>
+        <span></span>
+        <span></span>
+        <span></span>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a (click)="scrollTo('app-introduction')" class="nav-link">
+                    <i class="bi bi-house"></i> Home
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="scrollTo('about')" class="nav-link">
+                    <i class="bi bi-truck"></i> Sobre
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="scrollTo('app-carrossel')" class="nav-link">
+                    <i class="bi bi-truck"></i> Tecnologias
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="scrollTo('app-portfolio')" class="nav-link">
+                    <i class="bi bi-people"></i> Portifolio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a (click)="scrollTo('app-footer')" class="nav-link">
+                    <i class="bi bi-people"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  

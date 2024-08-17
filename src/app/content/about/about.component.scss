@@ -1,0 +1,118 @@
+/* Estilo para a seção About */
+#about {
+  padding: 4rem 0;
+  background-color: #fff;
+  display: flex; /* Adiciona Flexbox para organizar o layout */
+  justify-content: center; /* Centraliza o container horizontalmente */
+}
+
+/* Estilo geral do container */
+.mt-5 {
+  margin-top: 5rem; /* Espaço superior para o container */
+  max-width: 800px; /* Define uma largura máxima para o container */
+  width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+  display: flex; /* Adiciona Flexbox para organizar o layout */
+  flex-direction: column; /* Alinha os itens em coluna */
+  align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+
+/* Estilo para o título */
+.title-box-2 {
+  text-align: center; /* Centraliza o título */
+}
+
+.line-mf {
+  width: 50px;
+  height: 3px;
+  background-color: #26D0CE; 
+  margin: 0 auto 2rem auto;
+  position: relative;
+  z-index: 2; 
+}
+
+/* Estilo para o título das habilidades */
+.title-a {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Estilo para a descrição do about-me */
+.about-me .lead {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Contêiner dos Botões */
+.btn-container {
+  margin-top: 2rem; /* Espaço entre a descrição e os botões */
+  text-align: center; /* Centraliza os botões */
+  width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+}
+
+/* Estilo geral dos botões */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: none;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  margin: 1rem; /* Espaço entre botões e margem superior */
+  text-decoration: none;
+}
+
+.button:focus {
+  outline: 0;
+}
+
+.button:hover {
+  background-color: #26D0CE;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button-a {
+  background-color: #26D0CE;
+  color: #fff;
+  border-color: #bbf5df;
+}
+
+.button-big {
+  padding: 0.9rem 2.3rem;
+  font-size: 1.2rem;
+}
+
+.button-rouded {
+  border-radius: 5rem;
+}
+
+
+/* Estilo para o container da descrição */
+.description-container {
+  display: block;
+  font-size: 3rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.description-container p {
+  color: #333;
+  font-size: responsive-font; /* Usa a variável de fonte responsiva */
+}
+
+.responsive-font {
+  font-size: 5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.5rem; /* Aumenta o tamanho em telas médias */
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 2rem; /* Aumenta ainda mais o tamanho em telas grandes */
+  }
+}

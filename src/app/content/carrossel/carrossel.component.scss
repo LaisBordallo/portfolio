@@ -1,0 +1,193 @@
+/* Estilo para o título da seção */
+.title-box-2 {
+  text-align: center;
+  padding: 1px; 
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  position: relative; 
+  z-index: 1; 
+}
+
+.line-mf {
+  width: 50px;
+  height: 3px;
+  background-color: #26D0CE; 
+  margin: 0 auto 2rem auto;
+  position: relative;
+  z-index: 2; 
+}
+
+/* Ajusta o tamanho dos itens do carrossel */
+.slick-slide {
+  display: flex;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  width: 20%; /* Ajuste a largura conforme necessário */
+  flex-shrink: 0; 
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  border: 1px solid #333;
+}
+
+.slick-slide img {
+  width: 100%; /* Ajusta a largura da imagem para preencher o contêiner do item */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: cover; /* Ajusta o tamanho da imagem para preencher o contêiner */
+}
+
+/* Ajusta o título */
+.slick-slide h3 {
+  position: absolute; /* Permite que o título seja posicionado sobre a imagem */
+  bottom: 10px; /* Ajusta a distância do título do fundo do item */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Ajusta o alinhamento horizontal */
+  color: #333; /* Cor do título */
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para legibilidade */
+  padding: 5px 10px; /* Padding para garantir espaço ao redor do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+  width: auto; /* Permite que a largura do título se ajuste ao conteúdo */
+  max-width: 90%; /* Evita que o título ultrapasse a largura do item */
+  box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+  font-weight: 600; /* Ajuste para dar mais destaque ao título */
+  margin-bottom: 1px;
+  display: inline-block;
+}
+
+/* Ajusta a largura do contêiner do carrossel */
+.slick-track {
+  display: flex;
+  align-items: center; /* Centraliza os itens verticalmente, se necessário */
+}
+
+/* Adiciona um efeito de hover nos itens */
+.owl-carousel .owl-item .testimonial:hover {
+  transform: translateY(-10px);
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  max-width: 150px; /* Ajuste conforme necessário */
+  max-height: 2000px;
+  margin: auto; /* Centraliza o conteúdo */
+  text-align: center;
+}
+
+.owl-carousel .owl-item .testimonial {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+/* Estilos para os pontos de navegação */
+.owl-dots {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.owl-dot {
+  display: inline-block;
+  width: 30px; /* Ajuste a largura conforme necessário */
+  height: 5px; /* Ajuste a altura conforme necessário */
+  margin: 5px;
+  background: #ccc;
+  border-radius: 5px; /* Barras retangulares com bordas arredondadas */
+  transition: background-color 0.3s;
+}
+
+.owl-dot.active {
+  background: #333;
+}
+
+/* Estilo para os botões de navegação */
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.owl-nav button.owl-prev,
+.owl-nav button.owl-next {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.owl-nav button.owl-prev:hover,
+.owl-nav button.owl-next:hover {
+  color: #26D0CE;
+}
+
+/* Animação personalizada para o fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Animação personalizada para o fade out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
+
+/* Aplica a animação de entrada aos itens */
+.owl-carousel .owl-item .fadeIn {
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Aplica a animação de saída aos itens */
+.owl-carousel .owl-item .fadeOut {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+/* Animação do carrossel */
+.owl-carousel .owl-stage {
+  transition: transform 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@media (max-width: 767.98px) {
+  .owl-carousel-o {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .testimonial {
+    max-width: 100%;
+  }
+}

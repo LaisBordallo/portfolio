@@ -1,0 +1,16 @@
+<div class="title-box-2 ng-container">
+  <h1 class="title-a text-center">TECNOLOGIAS</h1>  
+  <div class="line-mf"></div>
+</div>
+<div class="owl-carousel-o ">
+<owl-carousel-o [options]="customOptions">
+  <ng-container *ngFor="let testimonial of testimonials">
+    <ng-template carouselSlide>
+      <div class="testimonial">
+        <img [src]="testimonial.image" alt="{{ testimonial.name }}" class="testimonial-image" />
+        <h3>{{ testimonial.name }}</h3>
+      </div>
+    </ng-template>
+  </ng-container>
+</owl-carousel-o>
+</div>
