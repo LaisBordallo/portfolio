@@ -12,5 +12,5 @@ import { NavbarComponent } from "./content/navbar/navbar.component";
   
 })
 export class AppComponent {
-  title = 'meu-portfolio';
+  title = 'portfolio';
 }
